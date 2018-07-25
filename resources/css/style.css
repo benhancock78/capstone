@@ -1,0 +1,445 @@
+html  {
+  font-family: Lato;
+  font-size: 16px;
+  color: gray;
+  box-sizing: border-box;
+  line-height: 1.8rem;
+}
+body  {
+    box-sizing: border-box;
+}
+
+
+.all  {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .all {
+        max-width: 490px;
+    }
+}
+
+.flex {
+  display: flex;
+}
+
+
+
+h1  {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+h2  {
+  font-size: 1.5rem;
+}
+
+p, a, li {
+  font-size: 1.3rem;
+}
+
+/* header */
+
+header  {
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+
+}
+
+.logo {
+  align-items: center;
+  margin-left: 1.5rem;
+  height: 2rem;
+
+}
+
+.colmar {
+  color: black;
+}
+
+.nav  {
+  margin-right: 1.5rem;
+}
+.nav a  {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: gray;
+}
+.nav a:last-child {
+  background: lightgray;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+.mobile_nav {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+    .colmar {
+        display: none;
+    }
+    .academy  {
+      display: none;
+    }
+    .nav  {
+      display: none;
+    }
+    .mobile_nav {
+      width: 220px;
+      justify-content: space-around;
+      display: flex;
+    }
+    header  {
+      width: 100%;
+    }
+}
+
+/* jumbotron */
+
+
+.jumbotron  {
+  background-color: lightgray;
+  justify-content: flex-end;
+  padding: 2rem 1.5rem;
+  border-radius: 0 0 5px 5px;
+
+}
+
+.jumbotron img  {
+  width: 60%;
+  height: 90%;
+  margin-right: 1.5rem;
+}
+
+.jumbotron .content {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jumbotron  h1  {
+  margin-bottom: 1rem;
+}
+.jumbotron  h2  {
+  margin-bottom: 1rem;
+}
+
+.jumbotron  a {
+  background-color: gray;
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.jumbotron  a:hover {
+  background: black;
+  color: white;
+  transition-delay: 0.15ms;
+  transition-timing-function: ease-in-out;
+}
+
+a:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 480px) {
+  .jumbotron  {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+  .jumbotron  img {
+    width: 100%;
+  }
+  .jumbotron  h1  {
+    padding: 2rem 0;
+  }
+.jumbotron  .content  {
+  padding: 0 1rem;
+}
+.jumbotron  a {
+  margin-top: 1.5rem;
+}
+}
+
+/* practicing box */
+
+.practicing {
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+
+}
+
+.imagecontent {
+  flex-direction: column;
+  width: 60%;
+  margin-right: 1.5rem;
+}
+
+.imagecontent img {
+  width: 100%;
+}
+
+.practicing h1  {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.practicing p {
+  margin-bottom: 1.5rem;
+}
+
+.practicing .imagecontent  {
+  margin-bottom: 2rem;
+}
+.bold {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+
+
+/* column2 */
+
+.practicing .images {
+  width: 40%;
+}
+
+.practicing .images .box  {
+  justify-content: space-between;
+  height: auto;
+}
+
+.practicing .box .content {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box  img {
+  width: 180px;
+  height: 180px;
+  padding: 1rem;
+}
+
+.practicing .box .content p {
+margin: 0.5rem 0;
+}
+
+.practicing .box .content a {
+  text-decoration: none;
+}
+
+.practicing .images .box:last-child  {
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 480px) {
+.imagecontent {
+  display: none;
+  padding-top: 1rem;
+    }
+
+
+.images .box  {
+  flex-direction: column;
+}
+
+.practicing .images .box:last-child  {
+  background-color: white;
+}
+.box  img {
+  width: 100%;
+  /* height: 160px; */
+  padding: 1rem;
+}
+.practicing .images {
+  width: 85%;
+}
+
+.box .content {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+.box .content p {
+  padding: 0.7rem 0;
+}
+}
+
+/* start learning */
+
+.courses  {
+  background-color: lightgray;
+  flex-direction: column;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
+
+.heading  {
+  justify-content: center;
+
+}
+
+.heading  h1  {
+  margin: 2rem 0;
+}
+
+
+
+.row  {
+  justify-content: space-around;
+
+}
+
+.imagesbox  {
+  background-color: white;
+  margin: 2rem;
+  width: 295px;
+  /* padding: 1.5rem; */
+}
+
+.imagesbox  img {
+  width: 100%;
+}
+
+.imagesbox  h2  {
+  margin-top: 1rem;
+}
+
+.imagesbox  p  {
+  /* padding: 2rem 0; */
+}
+
+.imagesbox .content  {
+  padding-left: 1rem;
+}
+
+.imagesbox .content  p {
+  padding: 0.75rem 0;
+}
+.spec {
+  margin-bottom: 1.5rem;
+}
+
+.mobilelist {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+.heading  h1  {
+  padding: 2rem 0;
+}
+.courses  {
+  background-color: white;
+  border: 2px solid lightgray;
+}
+.row  {
+  display: none;
+}
+.mobilelist {
+  display: contents;
+  padding-bottom: 2rem;
+}
+li  {
+  background-color: lightgray;
+  padding: 1rem 0 1.5rem 1rem;
+  margin-top: 0.5rem;
+}
+}
+
+/* thesis exhibit */
+
+.title  {
+  justify-content: center;
+  align-items: center;
+}
+
+.title h2 {
+  padding: 2rem 0;
+}
+
+.thesis {
+  justify-content: center;
+}
+
+.thesiscolumn1  {
+  width: 60%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.thesiscolumn1 h2  {
+    padding-top: 1.5rem;
+    padding-bottom: 0.75rem;
+}
+
+.thesiscolumn1 p  {
+  margin-bottom: 2rem;
+}
+
+.thesiscolumn2  {
+  width: 40%;
+}
+
+.thesiscolumn2  .content  {
+  justify-content: flex-start;
+}
+
+.thesiscolumn2  img {
+  width: 35%;
+  height: 150px;
+  padding: 1rem;
+}
+
+.thesiscolumn2  .content  {
+  align-items: center;
+}
+
+.thesiscolumn2 .content:first-child  {
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+.thesiscolumn2  {
+  display: none;
+}
+.thesiscolumn1  h2, p  {
+  display: none;
+}
+.thesiscolumn1  {
+  padding: 0;
+  width: 100%;
+}
+}
+
+/* footer */
+
+footer  {
+  justify-content: space-between;
+  height: 4rem;
+}
+
+footer  span  {
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+.mob  {
+  display: none;
+}
+footer  {
+  padding-top: 1rem;
+}
+footer  span  {
+  padding: 1rem 1rem;
+}
+}
